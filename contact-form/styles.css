@@ -1,0 +1,145 @@
+/* === Remove input autofocus webkit === */
+*:focus {outline: none;}
+
+/* === ������ ��� ����� � ����� ������ === */
+
+.contact_form h2, .contact_form label {font-family:Georgia, Times, "Times New Roman", serif;}
+.form_hint, .required_notification {font-size: 11px;}
+
+.contact_form {
+		width:300px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+ 
+.form {
+	display: flex;
+	justify-content: center;
+}
+
+/* === ������ ����� === */
+.contact_form div {
+   max-width:500px;
+	margin:7px 10px 7px 10px;
+	padding:0px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+/* === ������ � ������������ ������ === */
+.contact_form label {
+	width:100px;
+	margin-top: 3px;
+	display:inline-block;
+	float:left;
+	padding:3px;
+	font-size: 18px;
+}
+.contact_form input {
+	height:30px; 
+	width:300px; 
+	padding:5px 8px;
+}
+.contact_form textarea {padding:8px; width:300px;}
+
+
+	/* ����� � ������� */
+	.contact_form input, .contact_form textarea { 
+		border:1px solid #aaa;
+		box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+		border-radius:2px;
+		padding-right:30px;
+		-moz-transition: padding .25s; 
+		-webkit-transition: padding .25s; 
+		-o-transition: padding .25s;
+		transition: padding .25s;
+	}
+	.contact_form input:focus, .contact_form textarea:focus {
+		background: #fff; 
+		border:1px solid #555; 
+		box-shadow: 0 0 3px #aaa; 
+		padding-right:70px;
+	}
+
+/* === HTML5  === */	
+.contact_form input:required, .contact_form textarea:required {
+	background: #fff no-repeat 98% center;
+}
+.contact_form input:required:valid, .contact_form textarea:required:valid {
+	background: #fff no-repeat 98% center;
+	box-shadow: 0 0 5px #5cd053;
+	border-color: #28921f;
+}
+.contact_form input:focus:invalid, .contact_form textarea:focus:invalid {
+	background: #fff no-repeat 98% center;
+	box-shadow: 0 0 5px #d45252;
+	border-color: #b03535
+}
+
+/* === ����� ��������� === */
+.form_hint {
+	background: #d45252;
+	border-radius: 3px 3px 3px 3px;
+	color: white;
+	margin-top:20px;
+	padding: 1px 6px;
+	z-index: 999; /* ��������� ������ ���� ��������� */
+	position: absolute; /* ���������� �����������, ���� ��������� � 2 ������ */
+	display: none;
+}
+.form_hint::before {
+	content: "\25C0";
+	color:#d45252;
+	position: absolute;
+	top:1px;
+	left:-6px;
+}
+.contact_form input:focus + .form_hint {display: inline;}
+.contact_form input:required:valid + .form_hint {background: #28921f;}
+.contact_form input:required:valid + .form_hint::before {color:#28921f;}
+	
+/* === ���������� ������ === */
+button.submit {
+	max-width: 300px;
+	background-color: black;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.382)), to(rgba(0, 0, 0, 0.262)));
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.382), rgba(0, 0, 0, 0.262));
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.382), rgba(0, 0, 0, 0.262));
+	background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.382)f, rgba(0, 0, 0, 0.262));
+	background: -o-linear-gradient(top, rgba(0, 0, 0, 0.382), rgba(0, 0, 0, 0.262));
+	background: linear-gradient(top, rgba(0, 0, 0, 0.382), rgba(0, 0, 0, 0.262));
+	border: 1px solid black;
+	border-bottom: 1px solid black;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	box-shadow: inset 0 1px 0 0  black;
+	-webkit-box-shadow: 0 1px 0 0  black inset ;
+	-moz-box-shadow: 0 1px 0 0  black inset;
+	-ms-box-shadow: 0 1px 0 0  black inset;
+	-o-box-shadow: 0 1px 0 0  black inset;
+	color: black;
+	font-weight: solid;
+	padding: 6px 20px;
+	font-size: 18px;
+	text-align: center;
+	text-shadow: 0 -1px 0 black;
+	margin: 0;
+}
+button.submit:hover {
+	opacity:.85;
+	cursor: pointer; 
+}
+button.submit:active {
+	border: 1px solid black;
+	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.262) inset; 
+	-webkit-box-shadow:0 0 10px 5px rgba(0, 0, 0, 0.262) inset ;
+	-moz-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.262) inset;
+	-ms-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.262) inset;
+	-o-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.262) inset;
+	
+}

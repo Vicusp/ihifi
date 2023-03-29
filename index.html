@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iHiFi</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="css\reset.css">
+    <link rel="stylesheet" media="screen" href="contact-form\styles.css" >
+    <link href="form\css\bootstrap.css" rel="stylesheet">
+<body>
+
+    <header class="header">
+        <div class="container">
+            <!-- Header nav -->
+            <div class="header-nav">
+                <a href="#!" class="logo">iHiFi</a>
+
+                <nav id="nav" class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link active">Главная</a></li>
+                        <li class="nav-item"><a href="reviews.html" class="nav-link">Отзывы</a></li>
+                        <li class="nav-item"><a href="#portfolio-title" class="nav-link">Каталог</a></li>
+                        <li class="nav-item"><a href="contacts.html" class="nav-link">Контакты</a></li>
+                    </ul>
+                    <button id="nav-btn" class="nav-button">
+                        <img id="nav-btn-img" src="./img/icons/nav-open.svg" alt="Nav button">
+                    </button>
+                </nav>
+            </div>
+
+            <!-- Header content -->
+            <div class="header-row">
+
+                <div class="header-content" data-aos="fade-up">
+                    <h1 class="header-heading">Михаил Загоруйко<br> <span>Эксперт в электронике</span></h1>
+                    <p>Отвечу на все Ваши вопросы и посоветую лучшее оборудование. Для меня каждый клиент индивидуален и в каждом случае я найду оптимальное решение. Всегда рад помочь! Доставка товаров в любую точку России!</p>
+                </div>
+
+                <div class="header-img" data-aos="fade-left">
+
+                    <picture>
+                        <source media="(max-width: 799px)" srcset="./img/header/hero-mobile.png">
+                        <img src="./img/header/hero.png" alt="Фото">
+                    </picture>
+
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="services">
+        <div class="container">
+            <div class="services-row">
+
+                <div class="service-card" data-aos="fade-down">
+                    <img class="service-card-img" src="./img/services/01.svg" alt="Готовые решения">
+                    <h3 class="service-card-title">Готовые решения</h3>
+                    <p>Подбор оптимального оборудования под каждого заказчика</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-down">
+                    <img class="service-card-img" src="./img/services/02.svg" alt="Время-деньги">
+                    <h3 class="service-card-title">Точно в срок</h3>
+                    <p>Доставка оборудования в сжатые сроки</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-down">
+                    <img class="service-card-img" src="./img/services/03.svg" alt="UI/UX Design">
+                    <h3 class="service-card-title">Установка и подключение под ключ</h3>
+                    <p>Подключение аппаратуры любой сложности, интеграция в Ваш интерьер</p>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <div class="container">
+            <div class="portfolio-title" id="portfolio-title">
+                <h2 class="title-1">Каталог</h2>
+            </div>
+
+            <div class="project" data-aos="flip-up">
+                <img src="img\portfolio\1.OHczdbaxlJ4FwhaTT31PdNLWlJqP3J6c._CdPJ6R6sNC4pi3a_EXGk49ilzhSnFMrnZeu-fEtjjk" alt="" class="project-img">
+                <h3 class="project-title"><a href="https://www.avito.ru/sankt-peterburg/audio_i_video/yamaha_yp-d9_2210620144" target="_blank" >Yamaha YP-D9</a></h3>
+            </div>
+
+            <div class="project" data-aos="flip-up">
+                <img src="img\portfolio\1.StAxI7ax5jkHlGQ0KRYw9PSA5j2Niuw7.iY1ubpg9NIiAfdpSxjkoPG6GK8QCIgwXOtR40Elsy1s" alt="" class="project-img">
+                <h3 class="project-title"><a href="https://www.avito.ru/sankt-peterburg/audio_i_video/fezz_audio_titania_2657841968" target="_blank">Fezz Audio Titania</a></h3>
+            </div>
+
+            <div class="project" data-aos="flip-up">
+                <img src="img\portfolio\1.ZfCjxbaxyRmVcksU5ZgZmHxmyR0fbMMb.RieVe48w1dBS4Q9R3Tyhr4GvyOQXATHl41zdJQJscWg" alt="Braun Landing Page" class="project-img">
+                <h3 class="project-title"><a href="https://www.avito.ru/sankt-peterburg/audio_i_video/vincent_sv-237_black_2466084913" target="_blank" >Vincent SV-237 black</a></h3>
+            </div>
+
+        </div>
+    </section>
+
+<section class="message">
+  <div class="container">
+    <div class="form">
+    <form class="contact_form" action="contact-form\contact-form.php" method="post">
+        <div class="form-title">
+        <h2 class="title-1">Обратная связь</h2></div>
+        <div class="form-1">
+                <label for="name">Имя:</label>
+                <input type="text"  name="name" placeholder="Введите ваше имя" required  data-reg="^[А-ЯЁ][а-яё]*$"/>
+            </div>
+            <div class="form-1">
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="Введите электронный адрес" required data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" />
+            </div>
+            <div class="form-1">
+                <label for="tel">Телефон:</label>
+                <input type="tel" name="tel" placeholder="Введите номер телефона" required data-reg="^((\+7|7|8)+([0-9]){10})$"/>
+            </div>
+            <div class="form-1">
+                <label for="message">Текст сообщения:</label>
+                <textarea name="message" cols="40" rows="6" required ></textarea>
+            </div>
+            <input name="bezspama" type="text" style="display:none" value="" />
+            <div class="form-1">
+                <button class="submit" type="submit">Отправить сообщение</button>
+            </div>
+    </form>
+    </div>
+    </div>
+</section>
+
+    <footer class="contacts">
+        <div class="container">
+            <div class="contacts-title">
+                <h2 class="title-1">Контакты</h2>
+            </div>
+            <div class="contacts-content" data-aos="fade-down">
+                <p>Хочешь узнать больше?<br> Добро пожалолвать!</p>
+            </div>
+            <!-- <div class="contacts-button" data-aos="fade-down">
+                <a href="#!" class="btn">Send message</a>
+            </div> -->
+            <div class="contacts-social" id="contacts-social" data-aos="zoom-in">
+                <div class="tel" style="display: flex; flex-direction: column;">
+                <a class="telephon" href="tel: +79117013442"><img src="./img/socials/phone-svgrepo-com (1).svg" alt="Телефон"></a>
+                <a class="telephon2" href="tel: +79117013442" style="color: black;">+7(911)701-34-42</a></div>
+                <a href="https://www.avito.ru/user/bbb0561b66380daf377d477227d44c36/profile?id=2050471416&src=item&page_from=from_item_card&iid=2050471416" target="_blank"><img src="./img/socials/avito.png" style="width: 100px; height: 30px" alt="Avito"></a>
+            </div>
+            <div class="contacts-footer" data-aos="fade-up">
+                <p>Like me on<br> Avito</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

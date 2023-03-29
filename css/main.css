@@ -1,0 +1,317 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 1230px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.title-1 {
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.btn {
+    display: inline-block;
+    padding: 7px 22px;
+    background-color: #070707;
+    border-radius: 30px;
+
+    font-size: 18px;
+    color: #fff;
+
+    transition: background-color 0.2s ease-in, top 0.2s ease-in;
+}
+
+.btn:hover, .btn:focus {
+    background-color: #323232;
+}
+
+.btn:active {
+    position: relative;
+    top: 1px;
+    background-color: #000000;
+}
+
+
+/* Header */
+
+.header {
+    padding-top: 46px;
+    background-color: #F1F1F1;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    margin-bottom: 76px;
+}
+
+.logo {
+    position: relative;
+    padding: 0 12px 3px 0;
+
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1;
+    color: #000;
+}
+
+
+
+/* Nav */
+
+.nav-list {
+    display: flex;
+    column-gap: 50px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.nav-button {
+    display: none;
+}
+
+.nav-link {
+    color: #000;
+}
+
+.nav-link:hover {
+    color:  #000;
+    transform: scale(1.2);
+}
+.nav-link.active {
+    color:  #000;
+    transform: scale(1.2);
+}
+
+
+/* Header content */
+
+.header-row {
+    display: flex;justify-content: space-between;
+    column-gap: 0px;
+}
+
+.header-content {
+    margin-top: 124px;
+    max-width: 500px;
+}
+
+.header-heading {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 44px;
+}
+
+.header-content p {
+    line-height: 2;
+}
+
+/* Service */
+
+.services {
+    padding: 90px 0;
+}
+
+.services-row {
+    display: flex;
+    column-gap: 30px;
+    row-gap: 60px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    flex: 1 1 0;
+    min-width: 315px;
+}
+
+.service-card-img {
+    margin-bottom: 30px;
+}
+
+.service-card-title {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.service-card p {
+    line-height: 2;
+}
+
+/* Portfolio */
+
+.portfolio {
+    padding: 90px 0;
+    background-color: #F1F1F1;
+}
+
+.portfolio-title {
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.project {
+    text-align: center;
+}
+
+.project + .project  {
+    margin-top: 90px;
+}
+
+.project-img {
+    margin-bottom: 40px;
+}
+
+.project-title {
+    font-size: 18px;
+}
+
+.project-title a {
+    color: #000;
+    text-decoration: underline !important;
+}
+  
+
+/* Form */
+
+.message {
+    padding: 70px 0;
+}
+
+.form-title {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Footer */
+
+.contacts {
+    padding: 90px 0;
+    text-align: center;
+}
+
+.contacts-title {
+    margin-bottom: 40px;
+}
+
+.contacts-content {
+    margin: 0 auto 40px;
+    max-width: 480px;
+    font-size: 18px;
+}
+
+.contacts-content p + p {
+    margin-top: 1em;
+}
+
+.contacts-button {
+    margin-bottom: 80px;
+}
+
+.contacts-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
+    margin-bottom: 40px;
+}
+
+.contacts-footer {
+    color: #828282;
+}
+
+
+#message
+{
+    padding-top:50px;
+    padding-bottom:70px;
+    background-color:#f8f8f8;
+    border-top:1px solid #e5e5e5
+}
+ 
+#message h2
+{
+    margin-bottom:30px
+}
+ 
+#message h2 span
+{
+    border-bottom:5px solid #ed1d25
+}
+ 
+#message label
+{
+    color:#666;
+    margin-bottom:10px;
+    font-size:1.2em
+}
+ 
+#message #form_email,#message #form_message,#message #form_name
+{
+    box-sizing:border-box;
+    border:1px solid #fff;
+    box-shadow:none
+}
+ 
+#message #form_email,#message #form_name
+{
+    padding:25px;
+    border:1px solid #ccc;
+    font-size:1.1em
+}
+ 
+#message #form_message
+{
+    height:249px;
+    padding:25px;
+    border:1px solid #ccc;
+    font-size:1.2em
+}
+ 
+#message #button_contacts
+{
+    background:#666;
+    padding:15px 0;
+    width:100%;
+    border:2px solid #666;
+    color:#fff;
+    cursor:pointer;
+    font-size:1.3em;
+    text-transform:uppercase;
+    transition:background .6s,color .6s
+}
+ 
+#message #button_contacts:hover
+{
+    background:0 0;
+    color:#666
+}
+.form-1 {
+    max-width: 300px;
+}
+
+/* review */
+
+.review {
+    padding: 0px 0;
+}
+
+.review-title {
+display: flex;
+justify-content: center;
+}

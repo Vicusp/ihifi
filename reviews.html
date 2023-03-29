@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iHiFi</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="css\reset.css">
+    <link rel="stylesheet" type="text/css" href="css\review.css">
+    <link href="form\css\bootstrap.css" rel="stylesheet">
+<body>
+
+    <header class="header">
+        <div class="container">
+            <!-- Header nav -->
+            <div class="header-nav">
+                <a href="#!" class="logo">iHiFi</a>
+
+                <nav id="nav" class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
+                        <li class="nav-item"><a href="index.html" class="nav-link active">Отзывы</a></li>
+                        <li class="nav-item"><a href="#portfolio-title" class="nav-link">Каталог</a></li>
+                        <li class="nav-item"><a href="contacts.html" class="nav-link">Контакты</a></li>
+                    </ul>
+                    <button id="nav-btn" class="nav-button">
+                        <img id="nav-btn-img" src="./img/icons/nav-open.svg" alt="Nav button">
+                    </button>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="review">
+      <div class="container">
+         <div class="review-title">
+            <h2 class="title-1">Отзывы клиентов</h2>
+        </div>
+            <div class="all">
+               <input checked type="radio" name="respond" id="desktop">
+                  <article id="slider">
+                        <input checked type="radio" name="slider" id="switch1">
+                        <input type="radio" name="slider" id="switch2">
+                        <input type="radio" name="slider" id="switch3">
+                     <div id="slides">
+                        <div id="overflow">
+                           <div class="image">
+                              <article><img src="img\review\Отзыв_1.jpg"></article>
+                              <article><img src="img\review\Отзыв_2.jpg"></article>
+                              <article><img src="img\review\Отзыв_3.jpg"></article>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="controls">
+                        <label for="switch1"></label>
+                        <label for="switch2"></label>
+                        <label for="switch3"></label>
+                     </div>
+                     <div id="active">
+                        <label for="switch1"></label>
+                        <label for="switch2"></label>
+                        <label for="switch3"></label>
+                     </div>
+                  </article>
+            </div>
+      </div>
+  </section>
+</body>
+           <script src="./js/main.js"></script>
